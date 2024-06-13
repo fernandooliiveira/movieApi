@@ -3,28 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Streaming</title>
+    <title>O Impacto dos Mangás na Cultura Pop</title>
     <style>
         body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 100%;
+        }
+        header h1 {
+            margin: 0;
+            color: #FF4500;
+            font-size: 2.5em;
+        }
+        header p {
+            color: #666;
+            font-size: 1.2em;
+        }
+        main {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
-            margin: 0;
+            flex-direction: column;
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
         }
         video {
-            width: 80%;
-            max-width: 800px;
+            width: 100%;
             border: 1px solid #ddd;
             border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #fff;
+            width: 100%;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+            margin-top: auto;
+        }
+        footer p {
+            margin: 0;
+            color: #666;
+            font-size: 0.9em;
         }
     </style>
 </head>
 <body>
-<video controls>
-    <source src="http://127.0.0.1:8080/video" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
+<header>
+    <h1>O Impacto dos Mangás na Cultura Pop</h1>
+    <p>Explore a história dos mangás e sua popularidade global</p>
+</header>
+<main>
+    <video controls>
+        <source src="http://127.0.0.1:8080/video" type="video/mp4">
+        Seu navegador não suporta a tag de vídeo.
+    </video>
+</main>
+<footer>
+    <p>&copy; 2024 Fernando e Hiago. Todos os direitos reservados.</p>
+</footer>
 </body>
 </html>

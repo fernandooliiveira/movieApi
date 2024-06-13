@@ -11,7 +11,7 @@ func main() {
 
 	// Rota para servir o vídeo
 	app.Get("/video", func(c *fiber.Ctx) error {
-		videoPath := "videos/movie.mp4"
+		videoPath := "videos/video.mp4"
 
 		return c.SendFile(videoPath)
 	})
